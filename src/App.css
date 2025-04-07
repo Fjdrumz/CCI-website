@@ -1,0 +1,1024 @@
+/* CSS Styles
+    */
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.video-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  overflow: hidden;
+}
+
+/* Video background settings */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Darker overlay for better text contrast */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6); /* Darker overlay */
+  z-index: 1;
+}
+
+/* Navbar fix: Ensure correct padding and sharpness */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  background-color: rgba(2, 6, 23, 0.9); /* Slight transparency */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+/* Center and enhance text readability */
+.video-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+  padding: 20px;
+}
+
+/* Improved typography for readability */
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Highlighted text color */
+.text-textRed {
+  color: #ffd700;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Ensure the video covers the entire screen */
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  overflow: hidden;
+}
+
+/* Video styling to cover the background */
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video fills the section */
+  z-index: -1; /* Keep the video behind content */
+}
+
+/* Add overlay to darken video and make text more readable */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Darker overlay for better contrast */
+  z-index: 1; /* Keeps it above the video */
+}
+
+/* Center the text */
+
+.video-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2; /* Keeps text above overlay */
+  color: white; /* White text for contrast */
+  width: 100%;
+  margin-top: 35px;
+}
+
+/* Styling for the heading */
+h1 {
+  font-size: 2rem; /* Default font size for small screens */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  line-height: 1.3;
+}
+
+.text-textRed {
+  color: #ffd700; /* Gold color for emphasis */
+  letter-spacing: -0.1em; /* Tighter letter spacing for this specific span */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem; /* Increase font size for medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+.ourVision {
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  padding: 10px;
+  border-radius: 30px; /* Rounded corners */
+}
+.watchLive {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+}
+
+.watchLive:hover {
+  background-color: black; /* Gold color on hover */
+  color: white;
+}
+
+.welcomHome {
+  position: relative; /* Make this section the reference point for absolute positioning */
+  height: 100vh; /* Optional: Make the section take full viewport height */
+}
+
+.buildingProjectBtn {
+  position: absolute; /* Position the button absolutely within the .welcomHome section */
+  top: 0; /* Align it to the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(
+    -50%
+  ); /* Offset the left positioning by 50% of the button's width to center it */
+  padding: 10px 20px; /* Optional: Adds padding inside the button */
+  font-size: 16px; /* Optional: Adjust the font size */
+  margin-top: 60px;
+}
+
+.buildingProjectBtn {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px; /* Optional: Adds padding inside the button */
+  font-size: 16px; /* Optional: Adjust the font size */
+  background-color: rgb(223 78 78); /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove default border */
+  border-radius: 50px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  letter-spacing: 5px;
+}
+
+.buildingProjectBtn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.seeAllCampuses:hover {
+  background-color: white;
+  color: black;
+  border: 0.5px solid gray;
+}
+
+section {
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.buildingProjectBtn:hover {
+  background-color: white;
+  color: black;
+  border: 0.5px solid gray;
+}
+
+.welcomHome {
+  padding-top: 100px; /* Add padding to move content down */
+  padding-left: 35px;
+}
+
+.welcomeHomeText,
+.welcomeHomeTitle {
+  margin-top: 10px;
+  font-family: "Anton";
+  letter-spacing: 1px;
+}
+
+.homeContent {
+  margin-top: 55px;
+}
+
+.arrowDiv {
+  display: flex;
+  margin-top: 20px;
+}
+
+.arrow {
+  transform: scaleX(-1);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.aboutUs {
+  display: flex;
+  margin-top: 50px;
+}
+
+@media (max-width: 608px) {
+  .aboutUs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+}
+
+.imageDisplay {
+  background-image: url("https://joincci.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero2.e3bb538b.jpg&w=1080&q=75");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 400px; /* Adjust height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align text to the top */
+  align-items: flex-start; /* Align text to the left */
+  color: white;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px; /* Space between divs */
+  position: relative;
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+.whoWeAre {
+  background-image: url("https://joincci.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero1.336205c9.png&w=1080&q=75");
+}
+
+.celebrations {
+  background-image: url("https://joincci.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcelebrations.f123ede1.webp&w=1080&q=75");
+}
+
+.imageDisplay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay for contrast */
+  border-radius: 8px; /* Match border radius */
+}
+
+.imageDisplay p {
+  font-size: 13px; /* Smaller text */
+  font-weight: 500;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 2;
+}
+
+.imageDisplay h1 {
+  font-size: 23px; /* Smaller heading */
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+}
+
+.imageDisplay h1::first-letter {
+  text-transform: uppercase;
+}
+.learnMore {
+  margin-top: auto; /* Pushes it to the bottom */
+  text-align: center;
+}
+
+.campusesSection {
+  position: relative;
+  z-index: 2;
+  background: white;
+  margin-top: 450px; /* Increase space to push it further down */
+  padding: 50px 0;
+}
+
+@media (max-width: 608px) {
+  .campusesSection {
+    position: relative;
+    z-index: 2;
+    background: white;
+    margin-top: 1000px; /* Increase space to push it further down */
+    padding: 50px 0;
+  }
+}
+.video-background {
+  z-index: 0; /* Or a higher value */
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust overlay opacity */
+  z-index: 1;
+}
+
+.heroContent {
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+.campusesSection {
+  background-color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.campusesTitle {
+  color: white;
+  font-family: "Anton";
+  letter-spacing: 2px;
+  font-size: 2.7rem;
+  margin-top: 25px;
+}
+
+.campusesTitle span {
+  color: #c04f22; /* Gold color for emphasis */
+}
+
+.campusesSctionBtn {
+  background: rgba(200, 200, 200, 0.1); /* Light gray with transparency */
+  padding: 5px 15px;
+  color: rgba(255, 255, 255, 0.9); /* Keep text readable */
+  border: none;
+  font-size: 12px;
+  letter-spacing: 3px;
+  border-radius: 30px; /* Rounded corners */
+  backdrop-filter: blur(5px); /* Adds a frosted-glass effect */
+  margin-top: 17px;
+}
+
+.campusesSection p {
+  color: white;
+  font-size: 18px; /* Smaller text */
+  font-weight: 500;
+  margin-top: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.seeAllCampuses {
+  background: transparent;
+  color: white;
+  font-weight: small;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin-top: 10px;
+  border: 1px solid white;
+}
+
+.VisitCCiSection {
+  background-color: black;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.VisitCciTittle {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-left: 55px;
+}
+
+.visitImages {
+  display: flex;
+  justify-content: space-between; /* Space between images */
+  margin-top: 50px; /* Space above the section */
+  margin-left: 15px;
+  padding: 0 20px; /* Padding for the section */
+}
+
+@media (max-width: 608px) {
+  .visitImages {
+    flex-direction: column; /* Stack images vertically on small screens */
+    align-items: center; /* Center images */
+  }
+}
+
+.visitImage1 {
+  background-image: url("https://joincci.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FNigeria.7cc7863c.jpeg&w=640&q=75");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 400px; /* Adjust height */
+  justify-content: flex-start; /* Align text to the top */
+  align-items: flex-start; /* Align text to the left */
+  color: white;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px; /* Space between divs */
+  position: relative;
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.visitImage2 {
+  background-image: url("https://joincci.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FCanada.d8d0103b.jpeg&w=640&q=75");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 400px;
+  justify-content: flex-start; /* Align text to the top */
+  align-items: flex-start; /* Align text to the left */
+  color: white;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px; /* Space between divs */
+  position: relative;
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.visitImage3 {
+  background-image: url("https://joincci.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FUK.dea2ef03.jpeg&w=640&q=75");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 400px; /* Adjust height */
+  justify-content: flex-start; /* Align text to the top */
+  align-items: flex-start; /* Align text to the left */
+  color: white;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px; /* Space between divs */
+  position: relative;
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.weBoastInChrist {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Moves content to the bottom */
+  align-items: flex-start; /* Aligns content to the left */
+  height: 100vh; /* Makes section take full viewport height */
+  padding-left: 60px; /* Adjust left padding as needed */
+  padding-bottom: 20px; /* Optional: Adds some bottom spacing */
+  margin-top: 150px;
+
+  background-image: url("/images/family.jpg"); /* Replace with your image URL */
+  background-size: cover; /* Ensures image covers entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image from repeating */
+}
+
+.weBoastInChristTitle {
+  color: white;
+  font-family: "Anton";
+  letter-spacing: 2px;
+  font-size: 2.7rem;
+  margin-top: 25px;
+}
+
+.visitCciBtn {
+  background: #c04f22; /* Light gray with transparency */
+  padding: 10px 20px;
+  color: white; /* Keep text readable */
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 3px;
+  border-radius: 30px; /* Rounded corners */
+  backdrop-filter: blur(5px); /* Adds a frosted-glass effect */
+  margin-top: 17px;
+}
+
+.communityTopText {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: flex-start; /* Keeps content at the top */
+  text-align: center; /* Ensures text is centered */
+  width: 100%; /* Ensures it spans the full width */
+  padding-top: 100px; /* Adjust this value for more/less space at the top */
+  margin-bottom: 40px;
+}
+
+.communityTitle {
+  font-family: "Anton", sans-serif;
+  font-size: 3.5rem; /* Adjust to keep it from being too big */
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: normal;
+  transform: scale(1.05);
+  text-shadow: none;
+  text-transform: lowercase;
+}
+
+.communityTitle::first-letter {
+  text-transform: uppercase;
+}
+
+.communityTitle span {
+  color: rgb(223, 78, 78);
+}
+
+.communityBtn {
+  background: rgb(241, 238, 238); /* Light gray with transparency */
+  padding: 10px 20px;
+  color: black; /* Keep text readable */
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 3px;
+  border-radius: 30px; /* Rounded corners */
+  backdrop-filter: blur(5px);
+  margin-bottom: 30px;
+}
+
+.moreThan {
+  font-size: 1.5rem; /* Adjust size as needed */
+  font-weight: 300; /* Makes text lighter */
+  letter-spacing: 2px;
+  font-weight: small;
+  margin-top: 20px;
+}
+
+.classesCelebrationsCounselling {
+  display: flex;
+  justify-content: space-between; /* Space between images */
+  margin-left: 15px;
+  padding: 0 20px; /* Padding for the section */
+}
+
+.classesImg {
+  width: 400px; /* Adjust width */
+  border-radius: 10px;
+  height: 350px; /* Adjust height */
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.first {
+  margin-right: 45px;
+}
+
+.community p {
+  width: 85%;
+}
+
+.ourLeadPastor {
+  background-color: black;
+  color: white;
+  padding-right: 70px;
+}
+
+.pastorContainer {
+  display: flex;
+  padding-top: 70px;
+}
+.pastorImg {
+  width: 80%; /* Adjust width */
+  border-radius: 10px;
+  height: 100vh; /* Adjust height */
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.aboutPastor {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+  margin-top: 100px;
+}
+
+.aboutPastor p {
+  line-height: 30px;
+}
+
+.fixed-top {
+  background-color: black;
+}
+
+.globalLogo {
+  margin-bottom: 15px;
+}
+
+.leadPastorTitle {
+  margin-bottom: 20px;
+}
+
+.readPastor {
+  background: transparent; /* Light gray with transparency */
+  padding: 10px 20px;
+  color: white; /* Keep text readable */
+  border: 1px solid white;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 3px;
+  border-radius: 30px; /* Rounded corners */
+  backdrop-filter: blur(5px); /* Adds a frosted-glass effect */
+}
+
+.readPastor:hover {
+  background-color: white;
+  color: black;
+  border: 0.5px solid gray;
+}
+
+@media (max-width: 608px) {
+  .classesCelebrationsCounselling {
+    flex-direction: column; /* Stack images vertically on small screens */
+    align-items: center; /* Center images */
+  }
+  .pastorContainer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Tablets & Small Screens */
+  .video-content h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+
+  .ourVision {
+    font-size: 1.2rem;
+  }
+
+  .watchLive {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+}
+
+.everybodyContainer {
+  display: flex;
+}
+
+.forEverybody {
+  padding-top: 120px;
+}
+
+.everybody {
+  width: 600px;
+  height: 400px;
+  background-color: rebeccapurple;
+  margin-left: 40px;
+}
+
+.everybodyImg {
+  width: 100%;
+}
+
+/* media Queries */
+
+@media (max-width: 480px) {
+  /* Mobile Phones */
+  .video-content h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    letter-spacing: 1px;
+  }
+
+  .ourVision {
+    font-size: 1.2rem;
+    padding-right: 20px;
+    letter-spacing: 1px;
+  }
+
+  .watchLive {
+    font-size: 1.1rem;
+    padding: 14px 24px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  .watchLive:hover {
+    background-color: #ffd700; /* Gold color on hover */
+    color: black;
+    border: 0.5px solid gray;
+  }
+  .buildingProjectBtn {
+    font-size: 1rem;
+    padding: 14px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    width: 270px;
+  }
+  .welcomeHomeText {
+    margin-top: 20px;
+    background-color: rgb(243, 236, 236);
+    width: 170px;
+    border-radius: 30px;
+    padding: 4px 5px 4px 10px;
+  }
+  .welcomeHomeTitle {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    text-shadow: none;
+  }
+  .aboutUs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-right: 30px;
+  }
+  .arrowDiv img {
+    width: 70px; /* Adjust size as needed */
+    height: 70px; /* Adjust size as needed */
+  }
+  .arrowDiv {
+    margin-top: 20px;
+  }
+  .arrow {
+    margin-left: 10px;
+  }
+  .weBoastInChrist {
+    padding-left: 20px; /* Adjust left padding as needed */
+    margin-top: 50px;
+  }
+  .classesCelebrationsCounselling1,
+  .classesCelebrationsCounselling2 {
+    padding-left: 30px;
+  }
+  .classesCelebrationsCounselling3 {
+    padding-right: 20px;
+  }
+  .pastorImg {
+    width: 100%; /* Adjust width */
+    height: 50vh; /* Adjust height */
+  }
+  .aboutPastor {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .custom-navbar-collapse {
+    background: #000; /* Ensures visibility on dark themes */
+    padding: 10px;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links .nav-link {
+    padding: 10px;
+    width: 100%;
+    color: white !important; /* Ensures visibility */
+  }
+}
+
+/* Hide on larger screens by default */
+.image-scroller {
+  display: none;
+}
+
+.image-track {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  cursor: grab;
+  user-select: none; /* Prevent text selection while dragging */
+  width: 100%;
+  padding: 20px 0;
+}
+
+.image-track:active {
+  cursor: grabbing;
+}
+
+.image-track img {
+  scroll-snap-align: start;
+  height: 400px; /* Larger images */
+  width: 260px; 
+  margin-right: 30px; /* More space between images */
+  margin-top: 50px;
+  flex: 0 0 auto;
+}
+
+/* Hide scrollbar but keep functionality */
+.image-track::-webkit-scrollbar {
+  display: none;
+}
+
+.image-track {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Show only on small devices and add some styling */
+@media (max-width: 768px) {
+  .image-scroller {
+    display: block;
+    width: 100vw;
+    margin-left: -20px; /* Offset to make full width */
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .image-track {
+    padding-bottom: 30px; /* Space for scroll hint */
+  }
+
+  /* Optional: Add gradient fade at edges */
+  .image-scroller {
+    position: relative;
+  }
+
+  .image-scroller::before,
+  .image-scroller::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .VisitCCiSection {
+    padding-top: 0px; /* Remove top padding */
+    padding-bottom: 0px; /* Remove bottom padding */
+  }
+}
+
+
+.image-container {
+  position: relative;
+}
+
+
+
+.image-text {
+  position: absolute;
+  bottom: 10px; 
+  left: 10px; 
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+}
+
+
+
+
+
+/* For the scrolling effect */
+.image-scroller {
+  overflow-x: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 10px;
+}
+
+.image-track {
+  display: flex;
+  gap: 20px; /* Space between images */
+}
+
+.image-container {
+  position: relative;
+  min-width: 200px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+/* Styling for small devices */
+@media screen and (max-width: 768px) {
+  .image-scroller {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+
+  .image-container {
+    scroll-snap-align: start;
+  }
+}
+
+/* Styling for desktop and large screens */
+@media screen and (min-width: 769px) {
+  .image-scroller {
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    justify-content: center; /* Center images on desktop */
+  }
+
+  .image-track {
+    gap: 30px; /* Increase gap between images */
+    align-items: center;
+  }
+
+  .image-container {
+    height: 400px; /* Make images larger on desktop */
+  }
+
+  .image-text {
+    font-size: 2rem; /* Make text larger on desktop */
+  }
+}
