@@ -7,8 +7,12 @@ import Campuses from "./components/Campuses";
 import VisitCCI from "./components/VisitCCI";
 import Community from "./components/Community";
 import OurLeadPastor from "./components/OurLeadPastor";
-// import AplaceForEveryone from "./components/AplaceForEveryone";
-import MovingImages from "./components/TestSlide";
+import AplaceForEveryone from "./components/AplaceForEveryone";
+import GiveToCci from "./components/GiveToCci";
+import Footer from "./components/Footer";
+
+
+
 
 function App() {
   return (
@@ -21,9 +25,9 @@ function App() {
         <VisitCCI />
         <Community />
         <OurLeadPastor />
-        {/* <AplaceForEveryone /> */}
-        <MovingImages />
-
+        <AplaceForEveryone />
+        <GiveToCci/>
+        <Footer />
       </main>
     </div>
   );
