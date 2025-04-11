@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.inChristJoy {
+  position: relative;
+  display: flex;
+  width: 100%; /* Ensure it occupies the full width */
+  height: 100vh; /* Full viewport height */
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: url("/images/about-banner.png") no-repeat center center;
+  background-size: cover; /* Make sure the image covers the entire section */
+  background-position: center; /* Keep the image centered */
+}
+
+.inChristContent {
+  text-align: center;
+  color: white;
+  z-index: 1;
+  margin-top: 180px;
+}
+
+.inChristContent button {
+  background: rgba(56, 52, 52, 0.699);
+  border: none;
+  padding: 5px 20px;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.inChristContent h2 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  font-family: "Anton";
+  letter-spacing: 2px;
+}
+.inChristContent h2 span {
+  color: #c04f22;
+}
+
+@media (max-width: 768px) {
+  .inChristJoy {
+    height: 60vh; 
+    background-size: auto; 
+  }
+
+  .inChristContent h2 {
+    font-size: 1.8rem; /* Adjust heading size */
+  }
+
+  .inChristContent button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Adjustments for very small screens (e.g., phones in portrait mode) */
+@media (max-width: 480px) {
+  .inChristJoy {
+    height: 83vh;
+    background-size: cover;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .inChristContent h2 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+  .inChristContent {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .inChristContent button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+.weServeGodContent {
+  display: flex;
+}
+
+.weServeGod {
+  padding-top: 80px;
+  padding-left: 130px;
+  padding-bottom: 50px;
+}
+
+.weServeGodContent p {
+  width: 360px;
+  margin-left: 50px;
+  color: #000000a3;
+}
+
+.serveGodH2 {
+  margin-right: 50px;
+  text-align: center;
+  font-family: "Anton";
+  margin-top: 20px;
+}
+
+.serveGodH2 h2 {
+  font-size: 3rem;
+}
+
+.serveGodH2 h2 span {
+  color: #d63f3f;
+}
+
+@media (max-width: 480px) {
+  .weServeGodContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .weServeGod {
+    padding: 80px 25px 50px 8px;
+    align-items: center;
+  }
+  .weServeGodContent p {
+    width: 98%;
+    margin-left: 10px;
+    color: #000000a3;
+    text-align: justify;
+  }
+  .serveGodH2 h2 {
+    font-family: "Anton";
+    text-align: left;
+    margin-left: 10px;
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+  .weServeGod {
+    padding-top: 40px;
+  }
+
+  .weServeGodContent p br:nth-of-type(3) {
+    display: none;
+  }
+  .extraMargin {
+    margin-bottom: 50px;
+  }
+}
+
+.weBelieveSection {
+  background: url("/public/images/purplepastor1.webp") no-repeat center center; /* Set the background image */
+  background-size: cover;
+  width: 95%;
+  height: 90vh;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.believeContent {
+  color: black;
+  background-color: white;
+  width: 50%;
+  margin-top: 30px;
+  padding: 65px 50px;
+}
+
+.believeContent h4 {
+  font-size: 3rem;
+  font-family: Anton;
+}
+
+.believeContent span {
+  color: #ff5733;
+}
+
+.believeContent ul {
+  list-style-type: square;
+  padding: 0;
+}
+
+.believeContent li {
+  margin-bottom: 10px;
+}
+
+.believeContent ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+}
+
+.believeContent li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.believeContent li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); /* Apply box shadow to the square */
+}
+
+@media screen and (max-width: 768px) {
+  .believeContent {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .believeContent h4 {
+    font-size: 2rem; /* Reduce font size for smaller screens */
+    margin-bottom: 15px;
+  }
+
+  .believeContent ul {
+    padding-left: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .believeContent li {
+    font-size: 1rem; /* Adjust font size for mobile devices */
+    margin-bottom: 12px;
+  }
+}
+
+/* Extra Small Screens (Phones in Portrait Mode) */
+@media screen and (max-width: 480px) {
+  .weBelieveSection {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 55vh;
+    width: 100%;
+    background-position: 1% center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+  }
+
+ .believeContent {
+  max-width: 800px; 
+  height: 47vh;
+  width: 100%; 
+  padding: 30px;
+  overflow: hidden; 
+  word-wrap: break-word
+}
+
+  .believeContent h4 {
+    font-size: 1.8rem; /* Further reduce the font size */
+    margin-bottom: 10px;
+  }
+
+  .believeContent ul {
+    width: 100%;
+  }
+
+  .believeContent li {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+}
+
+.approachTitle{
+  text-align: center;
+}
+.approachTitle h2{
+  font-size: 2.5rem;
+}
+.approachContent{
+  display: flex;
+   justify-content: center;
+  align-items: center;
+  margin-top: 40px; 
+  margin-left: 70px;
+}
+.approachContentSubDiv{
+  width: 350px;
+  margin-right: 40px;
+}
+
+.approachContentSubDiv img{
+  margin-bottom: 10px;
+}
+.approachImage{
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+ .approachContent{
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+ }
+ .approachContentSubDiv{
+  margin-bottom: 30px;
+ }
+ .approachTitle h2{
+  font-size: 1.5rem;
+}
+.approachTitle p{
+  font-size: small;
+}
+}
+
+.AboutLeadPastor{
+  padding: 100px 50px;
+}
+
+@media screen and (max-width: 480px) {
+  .AboutLeadPastor{
+  padding: 100px 0px;
+}
+}
+
+
+.cciExperienceTitle{
+  text-align: center;
+}
+
+
+/* Base Styles */
+.carousel-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 100%;
+}
+
+.testimonial-card {
+  flex: 0 0 calc(50% - 20px);
+  margin: 0 10px;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+  min-height: 300px;
+}
+
+
+.testimonial-card h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+.testimonial-card p {
+  color: #7f8c8d;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.testimonial-footer {
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  color: #f39c12;
+}
+
+/* Gradient Overlays (for smooth edge fading) */
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.gradient-overlay.left {
+  left: 0;
+}
+
+.gradient-overlay.right {
+  right: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .testimonial-card {
+    flex: 0 0 calc(100% - 20px);
+    min-height: 250px;
+  }
+  
+  .gradient-overlay {
+    width: 50px;
+  }
+}
+
+.cciExperienceTitle button{
+  border-radius: 50px;
+  border: none;
+  padding: 5px 20px;
+  font-size: small;
+  margin-bottom: 20px;
+}
+
+.cciExperienceTitle h2{
+  font-size: 2.5rem;
+  font-weight: bold;
+}

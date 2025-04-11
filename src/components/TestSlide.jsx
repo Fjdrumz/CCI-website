@@ -94,6 +94,7 @@ const MovingImages = () => {
           <img
             src="https://joincci.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FUK.dea2ef03.jpeg&w=640&q=75"
             alt="Content 3"
+            className="unitedKingdom"
           />
           <div className="image-text">United Kingdom</div>
         </div>
@@ -102,8 +103,9 @@ const MovingImages = () => {
           <img
             src="https://joincci.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FUS.29bb3a25.jpeg&w=750&q=75"
             alt="Content 3"
+            className="unitedKingdom"
           />
-          <div className="image-text">United Kingdom</div>
+          <div className="image-text">United States</div>
         </div>
 
         <div className="image-container">
@@ -111,7 +113,6 @@ const MovingImages = () => {
             src="https://joincci.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwatchany.b677bb3f.png&w=256&q=75"
             alt="Content 3"
           />
-          
         </div>
       </div>
     </div>

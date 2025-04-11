@@ -1,35 +1,26 @@
-import React from "react";
 import "./App.css";
-import NavBar from "./components/NavBar";
-import HeroSection from "./components/HeroSection";
-import WelcomeHome from "./components/WelcomeHome";
-import Campuses from "./components/Campuses";
-import VisitCCI from "./components/VisitCCI";
-import Community from "./components/Community";
-import OurLeadPastor from "./components/OurLeadPastor";
-import AplaceForEveryone from "./components/AplaceForEveryone";
-import GiveToCci from "./components/GiveToCci";
-import Footer from "./components/Footer";
-
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./Pages/HomePage";
+import AboutPage from "./Pages/AboutPage";
+import CampusesPage from "./Pages/CampusesPage";
+import MinistriesPage from "./Pages/MinistriesPage";
+import SermonsPage from "./Pages/SermonsPage";
+import GivePage from "./Pages/GivePage";
 
 
 
 function App() {
   return (
-    <div className="App">
-      <main className="mt-[72px]">
-        <NavBar />
-        <HeroSection />
-        <WelcomeHome /> 
-        <Campuses />
-        <VisitCCI />
-        <Community />
-        <OurLeadPastor />
-        <AplaceForEveryone />
-        <GiveToCci/>
-        <Footer />
-      </main>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/campuses" element={<CampusesPage />} />
+        <Route path="/ministries" element={<MinistriesPage />} />
+        <Route path="/sermons" element={<SermonsPage />} />
+        <Route path="/give" element={<GivePage />} />
+      </Routes>
+    </Router>
   );
 }
 
