@@ -1,11 +1,19 @@
 import React from "react";
 import Navbar from "../components/NavBar";
+import CampusesGlobally from "../components/CampusesGlobally";
+import VisitCciCountries from "../components/VisitCciCountries";
+import GiveToCci from "../components/GiveToCci";
+import Footer from "../components/Footer";
+
 
 function CampusesPage() {
   return (
-    <main className="p-5 pt-7">
+    <main className="pt-7">
       <Navbar />
-      <h1>HI, I AM THE CAMPUSES PAGE</h1>
+      <CampusesGlobally />
+      <VisitCciCountries />
+      <GiveToCci />
+      <Footer />
     </main>
   );
 }

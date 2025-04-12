@@ -58,8 +58,8 @@ body {
 
 @media (max-width: 768px) {
   .inChristJoy {
-    height: 60vh; 
-    background-size: auto; 
+    height: 60vh;
+    background-size: auto;
   }
 
   .inChristContent h2 {
@@ -251,19 +251,19 @@ body {
     padding-bottom: 50px;
     height: 55vh;
     width: 100%;
-    background-position: 1% center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
+    background-position: 1% center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
- .believeContent {
-  max-width: 800px; 
-  height: 47vh;
-  width: 100%; 
-  padding: 30px;
-  overflow: hidden; 
-  word-wrap: break-word
-}
+  .believeContent {
+    max-width: 800px;
+    height: 47vh;
+    width: 100%;
+    padding: 30px;
+    overflow: hidden;
+    word-wrap: break-word;
+  }
 
   .believeContent h4 {
     font-size: 1.8rem; /* Further reduce the font size */
@@ -280,63 +280,61 @@ body {
   }
 }
 
-.approachTitle{
+.approachTitle {
   text-align: center;
 }
-.approachTitle h2{
+.approachTitle h2 {
   font-size: 2.5rem;
 }
-.approachContent{
+.approachContent {
   display: flex;
-   justify-content: center;
+  justify-content: center;
   align-items: center;
-  margin-top: 40px; 
+  margin-top: 40px;
   margin-left: 70px;
 }
-.approachContentSubDiv{
+.approachContentSubDiv {
   width: 350px;
   margin-right: 40px;
 }
 
-.approachContentSubDiv img{
+.approachContentSubDiv img {
   margin-bottom: 10px;
 }
-.approachImage{
+.approachImage {
   width: 100%;
 }
 
 @media screen and (max-width: 480px) {
- .approachContent{
-  display: flex;
-  flex-direction: column;
-  margin-right: 40px;
- }
- .approachContentSubDiv{
-  margin-bottom: 30px;
- }
- .approachTitle h2{
-  font-size: 1.5rem;
-}
-.approachTitle p{
-  font-size: small;
-}
+  .approachContent {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+  }
+  .approachContentSubDiv {
+    margin-bottom: 30px;
+  }
+  .approachTitle h2 {
+    font-size: 1.5rem;
+  }
+  .approachTitle p {
+    font-size: small;
+  }
 }
 
-.AboutLeadPastor{
+.AboutLeadPastor {
   padding: 100px 50px;
 }
 
 @media screen and (max-width: 480px) {
-  .AboutLeadPastor{
-  padding: 100px 0px;
-}
+  .AboutLeadPastor {
+    padding: 100px 0px;
+  }
 }
 
-
-.cciExperienceTitle{
+.cciExperienceTitle {
   text-align: center;
 }
-
 
 /* Base Styles */
 .carousel-wrapper {
@@ -362,7 +360,6 @@ body {
   position: relative;
   min-height: 300px;
 }
-
 
 .testimonial-card h3 {
   font-size: 1.2rem;
@@ -409,13 +406,13 @@ body {
     flex: 0 0 calc(100% - 20px);
     min-height: 250px;
   }
-  
+
   .gradient-overlay {
     width: 50px;
   }
 }
 
-.cciExperienceTitle button{
+.cciExperienceTitle button {
   border-radius: 50px;
   border: none;
   padding: 5px 20px;
@@ -423,7 +420,197 @@ body {
   margin-bottom: 20px;
 }
 
-.cciExperienceTitle h2{
+.cciExperienceTitle h2 {
   font-size: 2.5rem;
   font-weight: bold;
+}
+
+.globalCampusesSection {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh;
+  background-color: black;
+  width: 100%;
+}
+
+.globalCampusesContent {
+  text-align: center;
+  color: white;
+  margin-top: 60px;
+}
+
+.globalCampusesContent h2 {
+  font-family: "Anton";
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.globalCampusesContent h2 span {
+  color: #c04f22;
+}
+
+.globalCampusesContent button {
+  color: white;
+  background-color: black;
+  border: none;
+  margin-bottom: 30px;
+  font-size: smaller;
+}
+
+.globalCampusesContent p {
+  margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .globalCampusesContent {
+    padding: 15px;
+  }
+
+  .globalCampusesContent h2 {
+    font-size: 2rem;
+  }
+
+  .globalCampusesContent button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .globalCampusesContent h2 {
+    font-size: 3rem;
+    line-height: 1.3;
+  }
+
+  .globalCampusesContent p {
+    font-size: 0.9rem;
+  }
+
+  .globalCampusesContent button {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+  .cciCountriesTitle button{
+  border-radius: 50px;
+  padding: 10px 40px;
+  width: 500px;
+}
+}
+
+.cciCountries{
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+.cciCountriesTitle{
+  text-align: center;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cciCountriesTitle div{
+   display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+.cciCountriesTitle h2{
+  font-size: 2.5rem;
+  letter-spacing: 10px;
+  font-family: "Anton";
+}
+
+.cciCountriesTitle button{
+  border-radius: 50px;
+  padding: 10px 40px;
+  border: 1px solid gray;
+  width: 300px;
+  align-items: center;
+}
+
+.cciCountriesTitle button img{
+  margin-right: 10px;
+}
+
+.cciCountriesTitle button:hover{
+  background-color: pink;
+}
+
+.countriesImgDiv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Adjust spacing between grid items */
+}
+
+.countriesImgDiv div {
+  background: #f9f9f9; /* Optional: Background color */
+  padding: 15px;
+  border-radius: 10px; /* Optional: Rounded corners */
+  text-align: center;
+}
+
+.countriesImgDiv div img{
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+.countriesImgDiv div img:hover{
+  filter: brightness(0.4);
+}
+
+.countriesImgDiv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+  gap: 20px; /* Space between items */
+  padding: 20px;
+}
+
+/* For tablets (max-width: 1024px) - 2 columns */
+@media (max-width: 1024px) {
+  .countriesImgDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For mobile devices (max-width: 768px) - 1 column */
+@media (max-width: 768px) {
+  .countriesImgDiv {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cciCountriesTitle button{
+  border-radius: 50px;
+  padding: 10px 40px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid gray;
+  margin-right: 20px;
+}
+.cciCountries{
+  padding-left: 0px;
+}
+.cciCountriesTitle h2{
+  font-size: 2rem;
+  margin-left: 30px;
+}
+}
+
+.imgSeeMoreBtn{
+  border-radius: 50px;
+  padding: 5px 10px;
+  border: 1px solid gray;
+  font-size: small;
+  background-color: white;
+}
+
+.imgSeeMoreBtn:hover{
+  background-color: black;
+  color: white;
 }
