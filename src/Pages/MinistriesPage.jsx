@@ -1,11 +1,18 @@
 import React from 'react'
 import Navbar from "../components/NavBar";
+import GetInvolved from '../components/GetInvolved';
+import SubContent from '../components/SubContent';
+import GiveToCci from "../components/GiveToCci";
+import Footer from "../components/Footer";
 
 function MinistriesPage() {
   return (
-    <main className='p-5 pt-7'>
+    <main className='pt-7'>
       <Navbar/>
-      <h1>Hi I AM MINISTRIES PAGE</h1>
+      <GetInvolved/>
+      <SubContent/>
+      <GiveToCci/>
+      <Footer />
     </main>
   );
 }

@@ -38,6 +38,8 @@ function AplaceForEveryone() {
           <h3>Finding Salam</h3>
           <p>Outreach Islam</p>
         </div>
+
+        
       </div>
     </section>
   );
