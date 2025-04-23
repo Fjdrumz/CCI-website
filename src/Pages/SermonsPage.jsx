@@ -1,13 +1,22 @@
-import React from 'react'
+import React from "react";
 import Navbar from "../components/NavBar";
+import SermonsSection from "../components/SermonsSection";
+import LatestSermons from "../components/LatestSermons";
+import GiveToCci from "../components/GiveToCci";
+import Footer from "../components/Footer";
+
+
 
 function SermonsPage() {
   return (
-    <main className="p-5 pt-7">
+    <main className="pt-7">
       <Navbar />
-      <h1>HI I AM SERMONS PAGE</h1>
+      <SermonsSection />
+      <LatestSermons />
+      <GiveToCci />
+      <Footer />
     </main>
   );
 }
 
-export default SermonsPage
+export default SermonsPage;

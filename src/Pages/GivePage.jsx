@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 import Navbar from "../components/NavBar";
-
+import Generosity from "../components/Generosity";
 
 function GivePage() {
   return (
     <main className="p-5 pt-7">
       <Navbar />
-      <h1>HI I AM GIVE PAGE</h1>
+      <Generosity />
     </main>
   );
 }
 
-export default GivePage
+export default GivePage;
