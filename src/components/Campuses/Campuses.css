@@ -1,0 +1,51 @@
+.campusesSection {
+  background-color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.campusesTitle {
+  color: white;
+  font-family: "Anton";
+  letter-spacing: 2px;
+  font-size: 2.7rem;
+  margin-top: 25px;
+}
+
+.campusesTitle span {
+  color: #c04f22; /* Gold color for emphasis */
+}
+
+.campusesSctionBtn {
+  background: rgba(200, 200, 200, 0.1); /* Light gray with transparency */
+  padding: 5px 15px;
+  color: rgba(255, 255, 255, 0.9); /* Keep text readable */
+  border: none;
+  font-size: 12px;
+  letter-spacing: 3px;
+  border-radius: 30px; /* Rounded corners */
+  backdrop-filter: blur(5px); /* Adds a frosted-glass effect */
+  margin-top: 17px;
+}
+
+.campusesSection p {
+  color: white;
+  font-size: 18px; /* Smaller text */
+  font-weight: 500;
+  margin-top: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.seeAllCampuses {
+  background: transparent;
+  color: white;
+  font-weight: small;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin-top: 10px;
+  border: 1px solid white;
+}

@@ -1,0 +1,42 @@
+.latest-sermons {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.latest-sermons::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(90deg, #4a6fa5, #3a5a8a, #2c3e50);
+}
+
+.section-header {
+  align-items: center;
+  margin-bottom: 4rem;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+.section-header button{
+  border-radius: 50px;
+  padding: 5px 10px;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.123);
+}
+
+.section-header h2 {
+  font-size: 3rem;
+  color: black;
+  margin-left: 1rem;
+  padding-top: 20px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.section-header p{
+  font-size: 1.3rem;
+}

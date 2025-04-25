@@ -1,0 +1,69 @@
+.ourLeadPastor {
+  background-color: black;
+  color: white;
+  padding-right: 70px;
+}
+
+.pastorContainer {
+  display: flex;
+  padding-top: 70px;
+}
+.pastorImg {
+  width: 80%; /* Adjust width */
+  border-radius: 10px;
+  height: 100vh; /* Adjust height */
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.aboutPastor {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+  margin-top: 100px;
+}
+
+.aboutPastor p {
+  line-height: 30px;
+}
+
+.fixed-top {
+  background-color: black;
+}
+
+.globalLogo {
+  margin-bottom: 15px;
+}
+
+.leadPastorTitle {
+  margin-bottom: 20px;
+}
+
+.readPastor {
+  background: transparent; /* Light gray with transparency */
+  padding: 10px 20px;
+  color: white; /* Keep text readable */
+  border: 1px solid white;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 3px;
+  border-radius: 30px; /* Rounded corners */
+  backdrop-filter: blur(5px); /* Adds a frosted-glass effect */
+}
+
+.readPastor:hover {
+  background-color: white;
+  color: black;
+  border: 0.5px solid gray;
+}
+
+@media (max-width: 608px) {
+  .classesCelebrationsCounselling {
+    flex-direction: column; /* Stack images vertically on small screens */
+    align-items: center; /* Center images */
+  }
+  .pastorContainer {
+    flex-direction: column;
+  }
+}

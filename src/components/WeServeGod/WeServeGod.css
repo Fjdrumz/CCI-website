@@ -1,0 +1,60 @@
+.weServeGod {
+  padding-top: 80px;
+  padding-left: 130px;
+  padding-bottom: 50px;
+}
+
+.weServeGodContent p {
+  width: 360px;
+  margin-left: 50px;
+  color: #000000a3;
+}
+
+.serveGodH2 {
+  margin-right: 50px;
+  text-align: center;
+  font-family: "Anton";
+  margin-top: 20px;
+}
+
+.serveGodH2 h2 {
+  font-size: 3rem;
+}
+
+.serveGodH2 h2 span {
+  color: #d63f3f;
+}
+
+@media (max-width: 480px) {
+  .weServeGodContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .weServeGod {
+    padding: 80px 25px 50px 8px;
+    align-items: center;
+  }
+  .weServeGodContent p {
+    width: 98%;
+    margin-left: 10px;
+    color: #000000a3;
+    text-align: justify;
+  }
+  .serveGodH2 h2 {
+    font-family: "Anton";
+    text-align: left;
+    margin-left: 10px;
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+  .weServeGod {
+    padding-top: 40px;
+  }
+
+  .weServeGodContent p br:nth-of-type(3) {
+    display: none;
+  }
+  .extraMargin {
+    margin-bottom: 50px;
+  }
+}

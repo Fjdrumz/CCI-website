@@ -1,0 +1,127 @@
+.footer {
+  background-color: #920606;
+  border: none;
+}
+
+.footer img {
+  margin-left: 100px;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 100px;
+  margin-top: 50px;
+  color: white;
+}
+
+.footerContent ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.footerContent ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footerContent ul li:first-child {
+  color: rgb(189, 186, 186);
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.footerContent li:hover {
+  text-decoration: underline;
+}
+
+.footerHr {
+  width: 85%;
+  height: 2px;
+  color: rgb(211, 197, 197);
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer img {
+    margin-left: 0;
+    margin-top: 20px;
+    height: auto;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+  }
+
+  li {
+    padding: 5px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footerContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 30px; /* Space between the columns */
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .giveSection {
+    padding-bottom: 0px;
+  }
+}
+
+.footerSocials {
+  display: flex;
+  gap: 20px; /* Space between icons */
+  margin-top: 20px; /* Space above the icons */
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin-left: 100px;
+}
+
+.footerSocials p {
+  color: white;
+  font-size: 14px;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .footerSocials {
+    flex-direction: column; /* Stack icons vertically on mobile */
+    align-items: center;
+    text-align: center;
+    margin-left: 0px;
+    width: 100%;
+  }
+  .footerSocials p {
+    margin-top: 10px;
+  }
+}
+
+.unitedKingdom {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}

@@ -1,0 +1,101 @@
+.welcomeHome {
+  padding-top: 100px; 
+  position: relative; /* Make this section the reference point for absolute positioning */
+  height: 100vh; /* Optional: Make the section take full viewport height */
+  padding-left: 35px;
+}
+
+.welcomeHomeText,
+.welcomeHomeTitle {
+  margin-top: 10px;
+  font-family: "Anton";
+  letter-spacing: 1px;
+}
+
+.homeContent {
+  margin-top: 55px;
+}
+
+.arrowDiv {
+  display: flex;
+  margin-top: 20px;
+}
+
+.arrow {
+  transform: scaleX(-1);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.aboutUs {
+  display: flex;
+  margin-top: 50px;
+}
+
+@media (max-width: 608px) {
+  .aboutUs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+}
+
+.imageDisplay {
+  background-image: url("https://joincci.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero2.e3bb538b.jpg&w=1080&q=75");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 400px; /* Adjust height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align text to the top */
+  align-items: flex-start; /* Align text to the left */
+  color: white;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px; /* Space between divs */
+  position: relative;
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+.whoWeAre {
+  background-image: url("https://joincci.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero1.336205c9.png&w=1080&q=75");
+}
+
+.celebrations {
+  background-image: url("https://joincci.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcelebrations.f123ede1.webp&w=1080&q=75");
+}
+
+.imageDisplay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay for contrast */
+  border-radius: 8px; /* Match border radius */
+}
+
+.imageDisplay p {
+  font-size: 13px; /* Smaller text */
+  font-weight: 500;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 2;
+}
+
+.imageDisplay h1 {
+  font-size: 23px; /* Smaller heading */
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+}
+
+.imageDisplay h1::first-letter {
+  text-transform: uppercase;
+}
+.learnMore {
+  margin-top: auto; /* Pushes it to the bottom */
+  text-align: center;
+}

@@ -1,0 +1,118 @@
+.weBelieveSection {
+  background: url("/images/purplepastor1.webp") no-repeat center center; /* Set the background image */
+  background-size: cover;
+  width: 95%;
+  height: 90vh;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.believeContent {
+  color: black;
+  background-color: white;
+  width: 50%;
+  margin-top: 30px;
+  padding: 65px 50px;
+}
+
+.believeContent h4 {
+  font-size: 3rem;
+  font-family: Anton;
+}
+
+.believeContent span {
+  color: #ff5733;
+}
+
+.believeContent ul {
+  list-style-type: square;
+  padding: 0;
+}
+
+.believeContent li {
+  margin-bottom: 10px;
+}
+
+.believeContent ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+}
+
+.believeContent li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.believeContent li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); /* Apply box shadow to the square */
+}
+
+@media screen and (max-width: 768px) {
+  .believeContent {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .believeContent h4 {
+    font-size: 2rem; /* Reduce font size for smaller screens */
+    margin-bottom: 15px;
+  }
+
+  .believeContent ul {
+    padding-left: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .believeContent li {
+    font-size: 1rem; /* Adjust font size for mobile devices */
+    margin-bottom: 12px;
+  }
+}
+
+/* Extra Small Screens (Phones in Portrait Mode) */
+@media screen and (max-width: 480px) {
+  .weBelieveSection {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 55vh;
+    width: 100%;
+    background-position: 1% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .believeContent {
+    max-width: 800px;
+    height: 47vh;
+    width: 100%;
+    padding: 30px;
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+
+  .believeContent h4 {
+    font-size: 1.8rem; /* Further reduce the font size */
+    margin-bottom: 10px;
+  }
+
+  .believeContent ul {
+    width: 100%;
+  }
+
+  .believeContent li {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+}

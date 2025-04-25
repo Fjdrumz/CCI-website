@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "../components/NavBar";
-import SermonsSection from "../components/SermonsSection";
-import LatestSermons from "../components/LatestSermons";
-import GiveToCci from "../components/GiveToCci";
-import Footer from "../components/Footer";
+import Navbar from "../components/NavBar/NavBar";
+import SermonsSection from "../components/SermonsSection/SermonsSection";
+import LatestSermons from "../components/LatestSermons/LatestSermons";
+import GiveToCci from "../components/GiveToCci/GiveToCci";
+import Footer from "../components/Footer/Footer";
 
 
 

@@ -1,0 +1,219 @@
+.giveSection {
+  position: relative; /* Ensures the overlay is positioned relative to this section */
+  width: 100%;
+  background-color: #920606;
+  padding-bottom: 100px;
+}
+
+.giveNow {
+  position: absolute;
+  top: -60px; /* Moves it outside the top */
+  left: 50%;
+  transform: translateX(-50%); /* Centers it horizontally */
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 234 234 / var(--tw-bg-opacity));
+  color: white;
+  color: black;
+  padding: 30px 90px 120px 65px;
+  width: 85%;
+  text-align: left;
+  border-radius: 10px;
+  background-image: url("/images/hand.jpg"); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the whole div */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 60%;
+  margin: -5px auto 0;
+}
+
+.giveTitle {
+  font-size: 5rem;
+  font-family: "Anton", sans-serif;
+  margin-top: 20px; /* Space above the title */
+  text-transform: none !important;
+  text-shadow: none;
+  letter-spacing: 2px;
+}
+
+.giveNow p {
+  font-size: 1.5rem;
+  text-transform: none !important;
+  text-shadow: none;
+  margin-bottom: 30px;
+}
+
+.giveBtn {
+  background: white; /* Light gray with transparency */
+  padding: 10px 20px;
+  color: black; /* Keep text readable */
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 3px;
+  border-radius: 30px; /* Rounded corners */
+  backdrop-filter: blur(5px); /* Adds a frosted-glass effect */
+  margin-top: 17px;
+  border: none;
+  margin-right: 10px;
+}
+
+.giveBtn:hover {
+  background-color: #ff5733;
+  color: white;
+  border: 0.5px solid gray;
+}
+
+.projectBtn {
+  background: #ff5733; /* Light gray with transparency */
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 3px;
+  border-radius: 30px;
+  margin-top: 17px;
+}
+
+.projectBtn:hover {
+  background-color: white;
+  color: black;
+  border: 0.5px solid gray;
+}
+
+.mailingList {
+  margin-top: 360px;
+}
+
+.btns {
+  display: flex;
+  margin-top: 55px;
+}
+
+@media screen and (max-width: 768px) {
+  .giveNow {
+    padding: 10px; /* Adjust padding for smaller screens */
+    width: 100%; /* Make it wider on smaller screens */
+    top: -30px; /* Adjust position */
+    border-radius: 0px;
+    padding-bottom: 90px;
+  }
+  .giveTitle {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+  .giveNow p {
+    font-size: 1.2rem; /* Smaller text for mobile */
+  }
+  .btns {
+    flex-direction: column; /* Stack buttons vertically on mobile */
+    align-items: center; /* Center buttons */
+  }
+  .giveBtn {
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .projectBtn {
+    width: 90%; /* Full width on mobile */
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .giveNow {
+    background-image: url("/public/images/hand.jpg"); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the whole div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 60%;
+  }
+  .mailingList {
+    font-size: 1.2rem; /* Smaller text for mobile */
+    margin-top: 100px;
+  }
+}
+
+.mailing-list {
+  font-size: 2.4rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  margin-top: 450px; /* Space above the title */
+  text-transform: none !important;
+  text-shadow: none;
+  letter-spacing: 5px;
+  text-align: center;
+  color: white;
+}
+
+.notification {
+  color: rgb(202, 202, 202);
+  margin-top: 17px;
+  text-align: center;
+}
+
+.mailing-list-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 10px; /* Space between input and button */
+}
+
+.mailing-list-form input {
+  padding: 10px 20px;
+  border: none;
+  width: 450px; /* Adjust width as needed */
+  font-size: 16px;
+  background-color: #ebebeb33;
+  border-radius: 50px;
+}
+
+input::placeholder {
+  color: #df7979; /* Placeholder color */
+  font: thin;
+}
+
+.submit {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+  color: #920606;
+  font-weight: bold;
+}
+
+.submit:hover {
+  background-color: black;
+  color: white;
+}
+
+.hr {
+  width: 85%;
+  height: 2px;
+  color: rgb(211, 197, 197);
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .mailing-list-form {
+    flex-direction: column; /* Stack input and button vertically on mobile */
+    align-items: center; /* Center items */
+  }
+  .mailing-list-form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .submit {
+    width: 100%; /* Full width on mobile */
+  }
+  .notification {
+    text-align: center;
+  }
+  .notification br {
+    display: none;
+  }
+  .hr {
+    width: 100%;
+    margin-top: 50px;
+  }
+}

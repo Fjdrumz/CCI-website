@@ -1,38 +1,31 @@
-import React from 'react';
+import React from "react";
 import "../App.css";
-import NavBar from "../components/NavBar";
-import HeroSection from "../components/HeroSection";
-import WelcomeHome from "../components/WelcomeHome";
-import Campuses from "../components/Campuses";
-import VisitCCI from "../components/VisitCCI";
-import Community from "../components/Community";
-import OurLeadPastor from "../components/OurLeadPastor";
-import AplaceForEveryone from "../components/AplaceForEveryone";
-import GiveToCci from "../components/GiveToCci";
-import Footer from "../components/Footer";
-
+import NavBar from "../components/NavBar/NavBar";
+import HeroSection from "../components/HeroSection/HeroSection";
+import WelcomeHome from "../components/WelcomeHome/WelcomeHome";
+import Campuses from "../components/Campuses/Campuses";
+import VisitCCI from "../components/VisitCci/VisitCCI";
+import Community from "../components/Community/Community";
+import OurLeadPastor from "../components/OurLeadPastor/OurLeadPastor";
+import AplaceForEveryone from "../components/AplaceForEveryone/AplaceForEveryone";
+import GiveToCci from "../components/GiveToCci/GiveToCci";
+import Footer from "../components/Footer/Footer";
 
 function HomePage() {
-     return (
-          <main className="mt-[72px]">
-            <NavBar />
-            <HeroSection />
-            <WelcomeHome /> 
-            <Campuses />
-            <VisitCCI />
-            <Community />
-            <OurLeadPastor />
-            <AplaceForEveryone />
-            <GiveToCci/>
-            <Footer />
-          </main>
-       
-      )
-  
+  return (
+    <main className="mt-[72px]">
+      <NavBar />
+      <HeroSection />
+      <WelcomeHome />
+      <Campuses />
+      <VisitCCI />
+      <Community />
+      <OurLeadPastor />
+      <AplaceForEveryone />
+      <GiveToCci />
+      <Footer />
+    </main>
+  );
 }
 
-export default HomePage
-
-
-
-
+export default HomePage;

@@ -1,5 +1,5 @@
 import React from 'react'
-import OurLeadPastor from "../components/OurLeadPastor";
+import OurLeadPastor from "../components/OurLeadPastor/OurLeadPastor";
 
 function AboutLeadPastor() {
   return (

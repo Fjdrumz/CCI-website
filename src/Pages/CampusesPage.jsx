@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "../components/NavBar";
-import CampusesGlobally from "../components/CampusesGlobally";
-import VisitCciCountries from "../components/VisitCciCountries";
-import GiveToCci from "../components/GiveToCci";
-import Footer from "../components/Footer";
+import Navbar from "../components/NavBar/NavBar";
+import CampusesGlobally from "../components/CampusesGlobally/CampusesGlobally";
+import VisitCciCountries from "../components/VisitCciCountries/VisitCciCountries";
+import GiveToCci from "../components/GiveToCci/GiveToCci";
+import Footer from "../components/Footer/Footer";
 
 
 function CampusesPage() {

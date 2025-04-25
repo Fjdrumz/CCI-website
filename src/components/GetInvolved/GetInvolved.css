@@ -1,0 +1,50 @@
+
+.getInvolved {
+  background-image: url("/images/fire.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.getInvolvedContent {
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  padding: 2rem;
+  max-width: 600px;
+}
+
+.getInvolvedContent button {
+  background-color: rgba(228, 222, 222, 0.822);
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.getInvolvedContent button:hover {
+  background-color: #fda785;
+}
+
+.getInvolvedContent h2 {
+  font-size: 6rem;
+  font-family: "Anton";
+  margin: 0.5rem 0;
+}
+
+.getInvolvedContent h2 span {
+  color: #ffcc00;
+}
+
+.getInvolvedContent p {
+  font-size: 1rem;
+}

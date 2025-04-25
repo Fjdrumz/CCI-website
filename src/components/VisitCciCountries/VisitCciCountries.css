@@ -1,0 +1,108 @@
+.cciCountries {
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+
+
+.cciCountriesTitle div {
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+.cciCountriesTitle h2 {
+  font-size: 2.5rem;
+  letter-spacing: 10px;
+  font-family: "Anton";
+}
+
+.cciCountriesTitle button {
+  border-radius: 50px;
+  padding: 10px 40px;
+  border: 1px solid gray;
+  width: 300px;
+  align-items: center;
+}
+
+.cciCountriesTitle button img {
+  margin-right: 10px;
+}
+
+.cciCountriesTitle button:hover {
+  background-color: pink;
+}
+
+.countriesImgDiv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Adjust spacing between grid items */
+}
+
+.countriesImgDiv div {
+  background: #f9f9f9; /* Optional: Background color */
+  padding: 15px;
+  border-radius: 10px; /* Optional: Rounded corners */
+  text-align: center;
+}
+
+.countriesImgDiv div img {
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+.countriesImgDiv div img:hover {
+  filter: brightness(0.4);
+}
+
+.countriesImgDiv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+  gap: 20px; /* Space between items */
+  padding: 20px;
+}
+
+/* For tablets (max-width: 1024px) - 2 columns */
+@media (max-width: 1024px) {
+  .countriesImgDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For mobile devices (max-width: 768px) - 1 column */
+@media (max-width: 768px) {
+  .countriesImgDiv {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cciCountriesTitle button {
+    border-radius: 50px;
+    padding: 10px 40px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid gray;
+    margin-right: 20px;
+  }
+  .cciCountries {
+    padding-left: 0px;
+  }
+  .cciCountriesTitle h2 {
+    font-size: 2rem;
+    margin-left: 30px;
+  }
+}
+
+.imgSeeMoreBtn {
+  border-radius: 50px;
+  padding: 5px 10px;
+  border: 1px solid gray;
+  font-size: small;
+  background-color: white;
+}
+
+.imgSeeMoreBtn:hover {
+  background-color: black;
+  color: white;
+}

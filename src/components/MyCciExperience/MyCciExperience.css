@@ -1,0 +1,97 @@
+/* Base Styles */
+.carousel-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 100%;
+}
+
+.testimonial-card {
+  flex: 0 0 calc(50% - 20px);
+  margin: 0 10px;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+  min-height: 300px;
+}
+
+.testimonial-card h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+.testimonial-card p {
+  color: #7f8c8d;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.testimonial-footer {
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  color: #f39c12;
+}
+
+/* Gradient Overlays (for smooth edge fading) */
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.gradient-overlay.left {
+  left: 0;
+}
+
+.gradient-overlay.right {
+  right: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .testimonial-card {
+    flex: 0 0 calc(100% - 20px);
+    min-height: 250px;
+  }
+
+  .gradient-overlay {
+    width: 50px;
+  }
+}
+
+
+.cciCountriesTitle {
+  text-align: center;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.cciExperienceTitle button {
+  border-radius: 50px;
+  border: none;
+  padding: 5px 20px;
+  font-size: small;
+  margin-bottom: 20px;
+}
+
+.cciExperienceTitle h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}

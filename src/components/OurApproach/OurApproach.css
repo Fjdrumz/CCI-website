@@ -1,0 +1,41 @@
+.approachTitle {
+  text-align: center;
+}
+.approachTitle h2 {
+  font-size: 2.5rem;
+}
+.approachContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+.approachContentSubDiv {
+  width: 350px;
+  margin-right: 40px;
+}
+
+.approachContentSubDiv img {
+  margin-bottom: 10px;
+}
+.approachImage {
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .approachContent {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+  }
+  .approachContentSubDiv {
+    margin-bottom: 30px;
+  }
+  .approachTitle h2 {
+    font-size: 1.5rem;
+  }
+  .approachTitle p {
+    font-size: small;
+  }
+}

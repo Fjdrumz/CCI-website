@@ -1,0 +1,79 @@
+.VisitCCiSection {
+  background-color: black;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.VisitCciTittle {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-left: 55px;
+}
+
+.visitImages {
+  display: flex;
+  justify-content: space-between; /* Space between images */
+  margin-top: 50px; /* Space above the section */
+  margin-left: 15px;
+  padding: 0 20px; /* Padding for the section */
+}
+
+@media (max-width: 608px) {
+  .visitImages {
+    flex-direction: column; /* Stack images vertically on small screens */
+    align-items: center; /* Center images */
+  }
+}
+
+.visitImage1 {
+  background-image: url("https://joincci.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FNigeria.7cc7863c.jpeg&w=640&q=75");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 400px; /* Adjust height */
+  justify-content: flex-start; /* Align text to the top */
+  align-items: flex-start; /* Align text to the left */
+  color: white;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px; /* Space between divs */
+  position: relative;
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.visitImage2 {
+  background-image: url("https://joincci.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FCanada.d8d0103b.jpeg&w=640&q=75");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 400px;
+  justify-content: flex-start; /* Align text to the top */
+  align-items: flex-start; /* Align text to the left */
+  color: white;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px; /* Space between divs */
+  position: relative;
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.visitImage3 {
+  background-image: url("https://joincci.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FUK.dea2ef03.jpeg&w=640&q=75");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 400px; /* Adjust height */
+  justify-content: flex-start; /* Align text to the top */
+  align-items: flex-start; /* Align text to the left */
+  color: white;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px; /* Space between divs */
+  position: relative;
+  border-radius: 8px; /* Optional: Rounded corners */
+}

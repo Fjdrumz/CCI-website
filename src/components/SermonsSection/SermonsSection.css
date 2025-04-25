@@ -1,0 +1,28 @@
+.sermonPraiseVideo{
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-top: 200px;
+  display: flex;
+  text-align: center;
+
+}
+.sermonsCreatedSection{
+  background-color: rgb(243, 243, 243);
+  width: 100%;
+  padding-bottom: 200px;
+}
+.curated button{
+  font-size: small;
+  border: none;
+}
+.curated h2{
+  font-size: 4rem;
+  line-height: 65px;
+  font-family: "Anton";
+  margin-left: 70px;
+}
+
+.curated h2 span{
+  color: #c04f22;
+}
+

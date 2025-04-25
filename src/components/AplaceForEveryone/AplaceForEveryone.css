@@ -1,0 +1,103 @@
+.forEverybody {
+  padding: 2rem;
+  overflow: hidden;
+  padding-bottom: 130px;
+}
+
+.everybodyContainer {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  margin-left: 80px;
+  padding-bottom: 1rem;
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+.everybodyContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.everybodyContainer {
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbar for IE and Edge */
+.everybodyContainer {
+  -ms-overflow-style: none;
+  margin-top: 50px;
+}
+
+.everybody {
+  flex: 0 0 auto;
+  width: 300px; /* Adjust width as needed */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.everybody h1 span {
+  color: #ff5733; /* Customize highlight color */
+}
+
+.everybodyImg img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  height: 80%;
+}
+
+.everybodyTitle {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: "Anton", sans-serif; /* Use Anton font */
+  letter-spacing: 3px;
+}
+
+.everybodyTitle span {
+  color: #ff5733; /* Customize highlight color */
+}
+
+.everybodyText {
+  padding-top: 46px;
+}
+
+.ministryBtn {
+  background: white; /* Light gray with transparency */
+  padding: 10px 20px;
+  color: black; /* Keep text readable */
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 3px;
+  border-radius: 30px; /* Rounded corners */
+  backdrop-filter: blur(5px); /* Adds a frosted-glass effect */
+  margin-top: 17px;
+}
+
+.ministryBtn:hover {
+  background-color: black;
+  color: white;
+  border: 0.5px solid gray;
+}
+
+@media screen and (max-width: 768px) {
+  .everybodyContainer {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .everybody {
+    width: 100%;
+    background-color: rgb(235, 232, 232);
+  }
+}

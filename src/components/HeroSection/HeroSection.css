@@ -1,0 +1,157 @@
+.video-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  overflow: hidden;
+}
+
+/* Video background settings */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Darker overlay for better text contrast */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6); /* Darker overlay */
+  z-index: 1;
+}
+
+/* Center and enhance text readability */
+.video-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+  padding: 20px;
+}
+
+/* Improved typography for readability */
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Highlighted text color */
+.text-textRed {
+  color: #c04f22;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Ensure the video covers the entire screen */
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  overflow: hidden;
+}
+
+/* Video styling to cover the background */
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video fills the section */
+  z-index: -1; /* Keep the video behind content */
+}
+
+/* Add overlay to darken video and make text more readable */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Darker overlay for better contrast */
+  z-index: 1; /* Keeps it above the video */
+}
+
+/* Center the text */
+
+.video-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2; /* Keeps text above overlay */
+  color: white; /* White text for contrast */
+  width: 100%;
+  margin-top: 35px;
+}
+
+/* Styling for the heading */
+h1 {
+  font-size: 2rem; /* Default font size for small screens */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  line-height: 1.3;
+}
+
+.text-textRed {
+  color: #c04f22; /* Gold color for emphasis */
+  letter-spacing: -0.1em; /* Tighter letter spacing for this specific span */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem; /* Increase font size for medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+.ourVision {
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  padding: 10px;
+  border-radius: 30px; /* Rounded corners */
+}
+.watchLive {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+}
+
+.watchLive:hover {
+  background-color: black; /* Gold color on hover */
+  color: white;
+}

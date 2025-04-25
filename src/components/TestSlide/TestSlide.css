@@ -1,0 +1,108 @@
+/* Base styles */
+.image-scroller {
+  display: none;
+  overflow-x: scroll;
+  padding: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.image-track {
+  display: flex;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
+  user-select: none;
+  width: 100%;
+}
+
+.image-track:active {
+  cursor: grabbing;
+}
+
+.image-container {
+  position: relative;
+  min-width: 200px;
+  height: 300px;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: left;
+}
+
+/* Hide scrollbar */
+.image-track::-webkit-scrollbar {
+  display: none;
+}
+.image-track {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Small screen only */
+@media (max-width: 768px) {
+  .image-scroller {
+    display: flex;
+    width: 100vw;
+    margin-left: -20px;
+    padding: 0 20px 30px;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .image-scroller::before,
+  .image-scroller::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .VisitCCiSection {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* Desktop screens */
+@media (min-width: 769px) {
+  .image-scroller {
+    display: flex;
+    overflow-x: hidden;
+    justify-content: center;
+  }
+
+  .image-track {
+    gap: 30px;
+    align-items: center;
+  }
+
+  .image-container {
+    height: 400px;
+  }
+
+  .image-text {
+    font-size: 2rem;
+  }
+}
+
+ 

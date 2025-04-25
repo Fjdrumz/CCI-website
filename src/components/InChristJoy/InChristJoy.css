@@ -1,0 +1,82 @@
+.inChristJoy {
+  position: relative;
+  display: flex;
+  width: 100%; /* Ensure it occupies the full width */
+  height: 100vh; /* Full viewport height */
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: url("/images/about-banner.png") no-repeat center center;
+  background-size: cover; /* Make sure the image covers the entire section */
+  background-position: center; /* Keep the image centered */
+}
+
+.inChristContent {
+  text-align: center;
+  color: white;
+  z-index: 1;
+  margin-top: 180px;
+}
+
+.inChristContent button {
+  background: rgba(56, 52, 52, 0.699);
+  border: none;
+  padding: 5px 20px;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.inChristContent h2 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  font-family: "Anton";
+  letter-spacing: 2px;
+}
+.inChristContent h2 span {
+  color: #c04f22;
+}
+
+@media (max-width: 768px) {
+  .inChristJoy {
+    height: 60vh;
+    background-size: auto;
+  }
+
+  .inChristContent h2 {
+    font-size: 1.8rem; /* Adjust heading size */
+  }
+
+  .inChristContent button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Adjustments for very small screens (e.g., phones in portrait mode) */
+@media (max-width: 480px) {
+  .inChristJoy {
+    height: 83vh;
+    background-size: cover;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .inChristContent h2 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+  .inChristContent {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .inChristContent button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
