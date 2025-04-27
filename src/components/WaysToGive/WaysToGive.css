@@ -1,0 +1,72 @@
+.waysToGiveSubDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 20px;
+}
+.waysToGiveDiv{
+    margin-top: 40px;
+    width: 89%;
+}
+
+.waysToGiveWrapper {
+  display: flex;
+  justify-content: center; 
+  padding-top: 2rem;
+}
+
+.waysToGiveDiv button {
+  margin: 0.5rem;
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(236, 232, 232);
+  font-weight: bold;
+  font-size: small;
+  color: black;
+  backdrop-filter: blur(4px);
+  transition: background-color 0.3s;
+}
+
+.waysToGiveSubDiv h2{
+    text-align: left;
+    font-family: "Anton";
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.waysToGiveSubDiv p{
+    text-align: right;
+     width: 60%;
+     font-size: small;
+     margin: 0;
+}
+
+@media (max-width: 768px) {
+  .waysToGiveSubDiv {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .waysToGiveSubDiv h2,
+  .waysToGiveSubDiv p {
+    width: 100%;
+    text-align: left;
+  }
+
+  .waysToGiveSubDiv p {
+    margin-top: 0.5rem;
+    font-size: large;
+    margin-left: 15px;
+    width: 80%;
+  }
+  .waysToGiveWrapper {
+    width: 700px;
+    justify-content: left;
+    margin-left: 10px;
+}
+}

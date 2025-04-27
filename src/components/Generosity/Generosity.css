@@ -1,0 +1,78 @@
+.generositySection {
+  background-image: url('/images/about-banner.png'); /* <-- replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  color: white; /* optional: for contrast */
+}
+
+.generosityDiv {
+  margin-bottom: 2rem;
+}
+
+.giveCash{
+    margin: 0.5rem;
+    padding: 0.4rem 0.7rem;
+    font-size: small;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(10, 10, 10, 0.534); /* transparent-ish button */
+    color: white;
+    backdrop-filter: blur(4px);
+    transition: background-color 0.3s;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.othersGive {
+  margin: 0.5rem;
+  padding: 0.5rem 1.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 50px;
+  background-color: transparent; 
+  color: white;
+  backdrop-filter: blur(4px);
+  transition: background-color 0.3s;
+}
+
+.giveNowBtn {
+  margin: 0.5rem;
+  padding: 0.5rem 1.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  background-color: white;  
+  color: black;
+  backdrop-filter: blur(4px);
+  transition: background-color 0.3s;
+}
+
+
+.giveCash:hover,
+.giveNowBtn:hover,
+.othersGive:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.generosityDiv h2{
+    font-size: 3.5rem;
+    font-family: "Anton";
+}
+
+.generosityDiv h2 span{
+    color: #c04f22;
+}

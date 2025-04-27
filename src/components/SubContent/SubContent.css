@@ -1,13 +1,13 @@
-.hi img{
+.hi img {
   width: 400px;
   margin-right: 50px;
 }
 
-.salam{
+.salam {
   height: 60%;
 }
 
-.hi{
+.hi {
   width: 450px; /* or whatever width you want */
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -15,7 +15,6 @@
   padding: 1rem;
   box-sizing: border-box;
 }
-
 
 .subContent {
   padding: 2rem;
@@ -67,6 +66,7 @@
 
   .hi {
     max-width: 90%;
+    height: 100vh;
   }
 
   .hi h3 {
@@ -75,5 +75,8 @@
 
   .hi p {
     font-size: 0.9rem;
+  }
+  .subContent {
+    padding-bottom: 100px;
   }
 }

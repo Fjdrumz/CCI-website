@@ -1,15 +1,18 @@
 import React from "react";
+import "./Generosity.css";
 
 function Generosity() {
   return (
     <section className="generositySection">
       <div className="generosityDiv">
-        <button className="giveCash">💸 give</button>
+        <button className="giveCash">💸GIVE</button>
         <h2>
-          <span>YOUR</span> GENEROSITY. OUR <span>MISSION.</span>
+          <span>YOUR</span> GENEROSITY.
+           <br />
+           OUR <span>MISSION.</span>
         </h2>
         <p>
-          Give towards our mission to reach a billion souls in ten thousand
+          Give towards our mission to reach a billion souls in ten <br /> thousand
           cities with the message of the gospel.
         </p>
       </div>

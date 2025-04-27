@@ -1,0 +1,240 @@
+.copyIcon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+
+
+.copyIcon:active {
+  transform: scale(0.95); 
+}
+
+
+.accountsContainer{
+    background-color: rgb(240, 192, 200);
+    border-radius: 10px;
+    width: 95%;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.accountNumbersSection{
+  justify-content: center;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+
+.flexAccounts{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.accNumberCopyDiv{
+    display: flex; 
+    justify-content: space-between;
+     align-items: center;
+}
+.accNumberCopyDiv p{
+    font-size: 2.3rem;
+    margin: 0;
+    padding: 0;
+    color: #5c5a5a;
+    font-weight: 500;
+}
+
+.accountNumber{
+    width: 50%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.mainacc{
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.534);
+}
+
+.space{
+    margin-right: 20px;
+}
+
+.accesBankDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+/* Base styling - already existing styles assumed */
+
+/* ===== MOBILE RESPONSIVENESS ===== */
+@media (max-width: 768px) {
+  .accountsContainer {
+    padding: 20px 1rem;
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .flexAccounts {
+    flex-direction: column; /* Stack accounts vertically */
+    gap: 1rem; /* Add space between stacked items */
+  }
+
+  .accountNumber {
+    width: 100%;
+  }
+
+  .accNumberCopyDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .accNumberCopyDiv p {
+    font-size: 16px; /* Slightly smaller account number */
+  }
+
+  .copyIcon {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .copyIcon i {
+    font-size: 16px; /* Icon size smaller */
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .accesBankDiv img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Even smaller devices (like small phones) */
+@media (max-width: 480px) {
+  .accNumberCopyDiv p {
+    font-size: 14px;
+  }
+
+  .copyIcon {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
+
+
+.otherAccounts {
+  background-color: #F3F4F6CC;
+   border-radius: 10px;
+    width: 50%;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.extraContainer{
+    display: flex;
+    margin-bottom: 10px;
+    width: 95%;
+    border-radius: 10px;
+}
+
+.otherAccountsFlex{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.otheraccountEtra{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+.payPalContainer{
+  background-color: #EDF4FA;
+  margin-left: 20px;
+  border-radius: 10px;
+  width: 50%;
+  padding: 20px 20px 0px 20px ;
+  position: relative;
+   border: 1px solid #0070E0;
+   overflow: hidden;
+}
+
+.paypalTitle{
+  font-weight: bold;
+}
+
+.paypalTitle img{
+  margin-right: 10px;
+}
+
+.payPalContainer p{
+  font-size: 1.2rem;
+  color: #5c5a5a;
+}
+
+
+.paypalFooter {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  background: #0070E0; /* Background color so you can see it */
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+.paypalFooter:hover {
+  background: #005bb5; /* Darker shade on hover */
+  cursor: pointer;
+}
+
+
+.paypalFooter button{
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .otherAccounts {
+    width: 100%;
+  }
+
+  .payPalContainer {
+    width: 100%;
+    margin-left: 0;
+    height: 250px;
+  }
+  .extraContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .otherAccounts{
+    margin-bottom: 20px;
+  }
+}
