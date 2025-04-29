@@ -142,3 +142,13 @@
     top: 80%;
   }
 }
+
+@media screen and (max-width: 396px) {
+  .specificGivingSection {
+    height: 60vh;
+  }
+  .typeOfGive {
+    width: 90%;
+    top: 85%;
+  }
+}
