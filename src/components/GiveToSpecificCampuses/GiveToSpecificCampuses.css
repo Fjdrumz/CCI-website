@@ -1,0 +1,141 @@
+
+
+
+.specificGivingSection {
+  padding-top: 60px;
+  position: relative;
+  height: 100vh;
+}
+
+.specificGivingContentContainer {
+  text-align: center;
+}
+
+.specificGivingContentContainer button {
+  font-size: small;
+  border-radius: 50px;
+  border: none;
+  padding: 10px 20px;
+}
+
+.specificGivingContentContainer h2 {
+  font-family: "Anton";
+  font-size: 3.7rem;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.specificGivingContentContainer p {
+  font-size: small;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.typeOfGive {
+  border: 1px solid gray;
+  width: 50%;
+   position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.typeToGiveContainer button:active {
+  position: relative; /* important */
+  height: 5rem;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  overflow: hidden; 
+  width: 150px;
+
+}
+
+.typeToGiveContainer button {
+  position: relative; /* important */
+  height: 5rem;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  border: 1px solid gray;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+    background-image:url('https://joincci.org/_next/static/media/purpose-offering-inactive.3c726b27.svg'); 
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 70px 70px;
+  color: white;
+  overflow: hidden; 
+  width: 150px;
+  color: black;
+}
+
+
+.active-button {
+  position: relative; /* important */
+  height: 5rem;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  border: 1px solid gray;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+    background-image:url('https://joincci.org/_next/static/media/purpose-special-active.d6b58a65.svg');
+
+  overflow: hidden; 
+  width: 150px;
+  color: black;
+}
+
+
+.typeToGiveContainer button:hover{
+    border: 1px solid #B20000,;
+}
+
+.typeToGiveContainer button img {
+   position: absolute;
+  top: 0.5rem; 
+  right: 0.5rem;
+  width: 1.5rem; 
+  height: 1.5rem;
+  color: black;
+}
+
+.typeToGiveContainer{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.extramargin{
+  margin-right: 13px;
+}
+
+
+.search-container{
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .typeToGiveContainer {
+    display: none;
+  }
+
+  .search-container {
+    display: block;
+    margin-top: 1rem;
+  }
+  .typeOfGive{
+    width: 90%;
+    top: 80%;
+  }
+  .specificGivingSection{
+    height: 50vh;
+  }
+}

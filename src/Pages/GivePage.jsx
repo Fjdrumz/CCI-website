@@ -4,6 +4,9 @@ import Generosity from "../components/Generosity/Generosity";
 import WaysToGive from "../components/WaysToGive/WaysToGive";
 import AccountNumbers from "../components/AccountNumbers/AccountNumbers";
 import GiveToSpecificCampuses from "../components/GiveToSpecificCampuses/GiveToSpecificCampuses";
+import Accordion from "../components/Accordion/Accordion";
+import GiveToCci from "../components/GiveToCci/GiveToCci";
+import Footer from "../components/Footer/Footer";
 
 function GivePage() {
   return (
@@ -13,6 +16,9 @@ function GivePage() {
       <WaysToGive />
       <AccountNumbers />
       <GiveToSpecificCampuses />
+      <Accordion />
+      <GiveToCci />
+      <Footer />
     </main>
   );
 }
