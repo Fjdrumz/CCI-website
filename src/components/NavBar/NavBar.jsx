@@ -1,21 +1,18 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { Navbar, Nav, Container } from "react-bootstrap"; // Correct import from react-bootstrap
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
-
 
 function ResponsiveNavbar() {
   return (
     <Navbar expand="lg" className="fixed-top" data-bs-theme="dark">
       <Container fluid>
+        {" "}
+        {/* Use fluid for full width */}
         {/* Logo on the Extreme Left */}
         <Navbar.Brand className="ps-0 mx-0">
           <img src="/images/cci-logo.svg" alt="Logo" />
         </Navbar.Brand>
-
         {/* Navbar Toggler for Mobile */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
         {/* Collapsible Nav Links */}
         <Navbar.Collapse
           id="basic-navbar-nav"

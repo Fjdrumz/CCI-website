@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/NavBar/NavBar";
 import "../About.css";
 import InChristJoy from "../components/InChristJoy/InChristJoy";
 import WeServeGod from "../components/WeServeGod/WeServeGod";
@@ -9,8 +8,6 @@ import ApproachImg from "../components/ApproachImg";
 import AboutLeadPastor from "../components/AboutLeadPastor";
 import MyCciExperience from "../components/MyCciExperience/MyCciExperience";
 import Community from "../components/Community/Community";
-import GiveToCci from "../components/GiveToCci/GiveToCci";
-import Footer from "../components/Footer/Footer";
 
 
 
@@ -20,7 +17,6 @@ import Footer from "../components/Footer/Footer";
 function AboutPage() {
   return (
     <main className="pt-7">
-      <Navbar />
       <InChristJoy />
       <WeServeGod />
       <WeBelieve />
@@ -29,8 +25,6 @@ function AboutPage() {
       <AboutLeadPastor />
       <MyCciExperience />
       <Community />
-      <GiveToCci />
-      <Footer />
     </main>
   );
 }
